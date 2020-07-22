@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">E-Health APP by Grup 1</string>
+    <string name="welcome">Welcome to E-Health APP</string>
+
+    <!-- LOG IN -->
+    <string name="login_title">Sign in</string>
+    <string name="login_recover_hint">Forgot Password?</string>
+    <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
+    <string name="login_email">Email</string>
+    <string name="login_password">Password</string>
+    <string name="login_btn">SIGN IN</string>
+    <string name="email_hint">met@gmail.com</string>
+
+    <!-- REGISTER -->
+    <string name="signup_title">Sign up</string>
+    <string name="signup_login_hint">Already have an account? Sign In</string>
+    <string name="signup_name">Name</string>
+    <string name="signup_email">Email</string>
+    <string name="signup_password">Password</string>
+    <string name="signup_hardware">Serial Hardware</string>
+
+    <!-- RECOVER PASS -->
+    <string name="recover_title">Reset your password</string>
+    <string name="recover_email">Email</string>
+    <string name="recover_serial_hardware">Hardware Serial</string>
+    <string name="recover_old_password">Old Password</string>
+    <string name="recover_new_password">New Password</string>
+
+
+    <!-- DISPLAY AND CONTROL -->
+    <string name="display_title">Display and control parameters</string>
+
+    <!-- MEDICATION -->
+    <string name="medication_title">Medication control</string>
+
+    <!-- ADD INFO TO CALENDAR -->
+    <string name="save_medication"> Save information </string>
+    <string name="med_name">Medication name</string>
+    <string name="med_title">Introduce medication plannning</string>
+    <string name="mon">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wend">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="sat">Saturday</string>
+    <string name="sun">Sunday</string>
+    <string name="no_med">No med.</string>
+
+    
+    <string-array name="spinner">
+        <item>Ibuprofeno</item>
+        <item>Paracetamol</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryCian</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkRed</item>
+        <item name="colorAccent">@color/colorAccentCian</item>
+    </style>
+
+    <!-- login and register hints -->
+
+    <!--underlined edit text style -->
+
+
+
+</resources>

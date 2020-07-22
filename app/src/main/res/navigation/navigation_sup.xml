@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_sup"
+    app:startDestination="@id/displayParamFragment">
+
+    <fragment
+        android:id="@+id/displayParamFragment"
+        android:name="com.example.ehealth_projectg1.view.DisplayParamFragment"
+        android:label="DisplayParamFragment">
+        <action
+            android:id="@+id/action_displayParamFragment_to_medicationFragment"
+            app:destination="@id/medicationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/medicationFragment"
+        android:name="com.example.ehealth_projectg1.view.MedicationFragment"
+        android:label="MedicationFragment">
+        <action
+            android:id="@+id/action_medicationFragment_to_addCalendarFragment"
+            app:destination="@id/addCalendarFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addCalendarFragment"
+        android:name="com.example.ehealth_projectg1.view.AddCalendarFragment"
+        android:label="AddCalendarFragment">
+        <action
+            android:id="@+id/action_addCalendarFragment_to_medicationFragment"
+            app:destination="@id/medicationFragment" />
+    </fragment>
+
+</navigation>

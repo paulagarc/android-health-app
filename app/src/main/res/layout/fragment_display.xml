@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_white">
+
+    <TextView
+        android:id="@+id/tv_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="@string/display_title"
+        android:textColor="@color/colorPrimaryDarkRed"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/lin_layout_fall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/linearlayout_border"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_display">
+
+        <ImageView
+            android:id="@+id/iv_fall"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="40dp"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/presence" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lin_layout_water"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/linearlayout_border"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lin_layout_fall">
+
+        <LinearLayout
+            android:id="@+id/lin_layout_watericons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/lin_layout_water">
+
+            <ImageView
+                android:id="@+id/iv_less_water"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/ic_remove_black_24dp" />
+
+            <ImageView
+                android:id="@+id/iv_water"
+                android:layout_width="80dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/water" />
+
+            <ImageView
+                android:id="@+id/iv_more_water"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="0dp"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/ic_add_black_24dp"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_layout_watervalue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/lin_layout_water">
+
+            <TextView
+                android:id="@+id/tv_water"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/grey_60"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lin_layout_temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/linearlayout_border"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lin_layout_water">
+
+        <ImageView
+            android:id="@+id/iv_temp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="0dp"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/temp" />
+
+        <TextView
+            android:id="@+id/tv_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/desc"
+            android:textColor="@color/grey_60"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

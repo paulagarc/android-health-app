@@ -1,0 +1,5 @@
+<resources>
+    <!-- FRAGMENT DISPLAY -->
+    <string name="desc">ImageView Description</string>
+
+</resources>
